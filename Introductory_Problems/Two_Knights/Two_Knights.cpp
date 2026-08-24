@@ -12,6 +12,6 @@ int main(){
     int n;
     cin >> n;
     for(int k = 1; k <= n; k++){
-        cout << ((k * k * (k - 1) * (k + 1)) / 2) - (4 * (k - 1) * (k - 2)) << "\n";
+        cout << ((1LL * k * k * (k - 1LL) * (k + 1LL)) / 2) - (1LL * 4 * (k - 1LL) * (k - 2LL)) << "\n";
     }
 }
