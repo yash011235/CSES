@@ -19,6 +19,7 @@ int main(){
     for(int i = 1; i < n; i++){
         if(a[i] < a[i - 1]){
             moves += (a[i - 1] - a[i]);
+            a[i] = a[i - 1];
         }
     }
     cout << moves << "\n";
