@@ -7,4 +7,5 @@ My accepted solutions to the [CSES Problem Set](https://cses.fi/problemset/), au
 
 | Problem | Category | Solutions |
 | :--- | :--- | :--- |
+| Missing Number | Introductory Problems | [ C++ ](https://github.com/yash011235/CSES/blob/main/Introductory_Problems/Missing_Number/Missing_Number.cpp) |
 | Weird Algorithm | Introductory Problems | [ C++ ](https://github.com/yash011235/CSES/blob/main/Introductory_Problems/Weird_Algorithm/Weird_Algorithm.cpp) |
