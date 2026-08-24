@@ -7,6 +7,7 @@ My accepted solutions to the [CSES Problem Set](https://cses.fi/problemset/), au
 
 | Problem | Category | Solutions |
 | :--- | :--- | :--- |
+| Bit Strings | Introductory Problems | [ C++ ](https://github.com/yash011235/CSES/blob/main/Introductory_Problems/Bit_Strings/Bit_Strings.cpp) |
 | Two Sets | Introductory Problems | [ C++ ](https://github.com/yash011235/CSES/blob/main/Introductory_Problems/Two_Sets/Two_Sets.cpp) |
 | Two Knights | Introductory Problems | [ C++ ](https://github.com/yash011235/CSES/blob/main/Introductory_Problems/Two_Knights/Two_Knights.cpp) |
 | Permutations | Introductory Problems | [ C++ ](https://github.com/yash011235/CSES/blob/main/Introductory_Problems/Permutations/Permutations.cpp) |
