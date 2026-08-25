@@ -7,6 +7,7 @@ My accepted solutions to the [CSES Problem Set](https://cses.fi/problemset/), au
 
 | Problem | Category | Solutions |
 | :--- | :--- | :--- |
+| Message Route | Graph Algorithms | [ C++ ](https://github.com/yash011235/CSES/blob/main/Graph_Algorithms/Message_Route/Message_Route.cpp) |
 | Building Roads | Graph Algorithms | [ C++ ](https://github.com/yash011235/CSES/blob/main/Graph_Algorithms/Building_Roads/Building_Roads.cpp) |
 | Labyrinth | Graph Algorithms | [ C++ ](https://github.com/yash011235/CSES/blob/main/Graph_Algorithms/Labyrinth/Labyrinth.cpp) |
 | Counting Rooms | Graph Algorithms | [ C++ ](https://github.com/yash011235/CSES/blob/main/Graph_Algorithms/Counting_Rooms/Counting_Rooms.cpp) |
