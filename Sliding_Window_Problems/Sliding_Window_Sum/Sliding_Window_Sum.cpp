@@ -9,23 +9,26 @@
 using namespace std;
  
 int main(){
-    int n, k;
+    long long n, k;
     cin >> n >> k;
     vector<int>arr;
-    int x, a, b, c;
+    long long x, a, b, c;
     cin >> x >> a >> b >> c;
     arr.push_back(x);
-    for(int i = 1; i < n; i++){
-        int num = ((arr[i - 1] * a) + b) % c;
+    //O(n)
+    for(long long i = 1; i < n; i++){
+        long long num = ((arr[i - 1] * a) + b) % c;
         arr.push_back(num);
     }
-    int sum = 0;
-    for(int i = 0; i < k; i++){
-        sum += arr[i];
+    long long sum = 0;
+    //O(k)
+    for(long long i = 0; i < k; i++){
+        sum += 1LL * arr[i];
     }
-    int ans = sum;
-    for(int i = k; i < n; i++){
-        int newsum = sum + arr[i] - arr[i - k];
+    long long ans = sum;
+    //O(n - k)
+    for(long long i = k; i < n; i++){
+        long long newsum = sum + arr[i] - arr[i - k];
         sum = newsum;
         ans = ans ^ newsum;
     }
