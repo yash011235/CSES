@@ -7,6 +7,7 @@ My accepted solutions to the [CSES Problem Set](https://cses.fi/problemset/), au
 
 | Problem | Category | Solutions |
 | :--- | :--- | :--- |
+| Round Trip | Graph Algorithms | [ C++ ](https://github.com/yash011235/CSES/blob/main/Graph_Algorithms/Round_Trip/Round_Trip.cpp) |
 | Building Teams | Graph Algorithms | [ C++ ](https://github.com/yash011235/CSES/blob/main/Graph_Algorithms/Building_Teams/Building_Teams.cpp) |
 | Message Route | Graph Algorithms | [ C++ ](https://github.com/yash011235/CSES/blob/main/Graph_Algorithms/Message_Route/Message_Route.cpp) |
 | Building Roads | Graph Algorithms | [ C++ ](https://github.com/yash011235/CSES/blob/main/Graph_Algorithms/Building_Roads/Building_Roads.cpp) |
