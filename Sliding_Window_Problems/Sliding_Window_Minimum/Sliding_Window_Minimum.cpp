@@ -11,31 +11,28 @@ using namespace std;
 int main(){
     long long n, k;
     cin >> n >> k;
-    vector<long long>arr;
     long long x, a, b, c;
     cin >> x >> a >> b >> c;
+    vector<long long>arr;
     arr.push_back(x);
-    //O(n)
-    for(long long i = 1; i < n; i++){
-        long long num = ((arr[i - 1] * a) + b) % c;
+    for(int i = 1; i < n; i++){
+        long long num = ((a * arr[i - 1]) + b) % c;
         arr.push_back(num);
     }
-    deque<long long>dq; //stores indices of values in increasing order
     long long ans = 0;
-    for(long long i = 0; i < n; i++){
-        //1. remove elements outside current window
+    deque<int>dq;
+    //stores indices in values in increasing order
+    for(int i = 0; i < n; i++){
         while(!dq.empty() && dq.front() <= i - k){
             dq.pop_front();
         }
-        //2. remove larger elements from the back
         while(!dq.empty() && arr[dq.back()] >= arr[i]){
             dq.pop_back();
         }
-        //3. add curren element
         dq.push_back(i);
         if(i >= (k - 1)){
             ans = ans ^ arr[dq.front()];
-        } 
+        }
     }
     cout << ans << "\n";
 }
