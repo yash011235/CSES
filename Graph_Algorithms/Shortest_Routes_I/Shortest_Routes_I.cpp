@@ -8,9 +8,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    int n, m;
+    long long n, m;
     cin >> n >> m;
-    vector<vector<pair<int, int>>>adj(n);
+    vector<vector<pair<long long, long long>>>adj(n);
     for(int i = 0; i < m; i++){
         int u, v, w;
         cin >> u >> v >> w;
@@ -18,13 +18,13 @@ int main(){
         v--;
         adj[u].push_back({v, w});
     }
-    vector<int>dist(n, INT_MAX);
+    vector<long long>dist(n, INT_MAX);
     dist[0] = 0;
-    priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>>pq;
+    priority_queue<pair<long long, long long>, vector<pair<long long, long long>>, greater<pair<long long, long long>>>pq;
     pq.push({0, 0});
     while(!pq.empty()){
-        int d = pq.top().first;
-        int node = pq.top().second;
+        long long d = pq.top().first;
+        long long node = pq.top().second;
         pq.pop();
         if(d > dist[node]){
             continue;
@@ -36,7 +36,7 @@ int main(){
             }
         }
     }
-    for(int i = 0; i < n; i++){
+    for(long long i = 0; i < n; i++){
         cout << dist[i] << " ";
     }
     cout << "\n";
