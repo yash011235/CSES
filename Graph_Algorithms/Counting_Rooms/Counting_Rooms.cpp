@@ -42,7 +42,7 @@ int main(){
     int cnt = 0;
     vector<vector<bool>>visi(n, vector<bool>(m, false));
     for(int i = 0; i < n; i++){
-        for(int j = 0; j < n; j++){
+        for(int j = 0; j < m; j++){
             if(!visi[i][j] && grid[i][j] == '.'){
                 bfs(i, j, grid, visi, n, m);
                 cnt++;
