@@ -7,6 +7,7 @@ My accepted solutions to the [CSES Problem Set](https://cses.fi/problemset/), au
 
 | Problem | Category | Solutions |
 | :--- | :--- | :--- |
+| Sliding Window Xor | Sliding Window Problems | [ C++ ](https://github.com/yash011235/CSES/blob/main/Sliding_Window_Problems/Sliding_Window_Xor/Sliding_Window_Xor.cpp) |
 | Sliding Window Minimum | Sliding Window Problems | [ C++ ](https://github.com/yash011235/CSES/blob/main/Sliding_Window_Problems/Sliding_Window_Minimum/Sliding_Window_Minimum.cpp) |
 | Sliding Window Sum | Sliding Window Problems | [ C++ ](https://github.com/yash011235/CSES/blob/main/Sliding_Window_Problems/Sliding_Window_Sum/Sliding_Window_Sum.cpp) |
 | Bit Strings | Introductory Problems | [ C++ ](https://github.com/yash011235/CSES/blob/main/Introductory_Problems/Bit_Strings/Bit_Strings.cpp) |
