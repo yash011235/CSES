@@ -18,7 +18,7 @@ int main(){
         v--;
         adj[u].push_back({v, w});
     }
-    vector<long long>dist(n, INT_MAX);
+    vector<long long>dist(n, LLONG_MAX);
     dist[0] = 0;
     priority_queue<pair<long long, long long>, vector<pair<long long, long long>>, greater<pair<long long, long long>>>pq;
     pq.push({0, 0});
