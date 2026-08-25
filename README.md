@@ -7,6 +7,7 @@ My accepted solutions to the [CSES Problem Set](https://cses.fi/problemset/), au
 
 | Problem | Category | Solutions |
 | :--- | :--- | :--- |
+| Counting Rooms | Graph Algorithms | [ C++ ](https://github.com/yash011235/CSES/blob/main/Graph_Algorithms/Counting_Rooms/Counting_Rooms.cpp) |
 | Finding Patterns | String Algorithms | [ C++ ](https://github.com/yash011235/CSES/blob/main/String_Algorithms/Finding_Patterns/Finding_Patterns.cpp) |
 | String Matching | String Algorithms | [ C++ ](https://github.com/yash011235/CSES/blob/main/String_Algorithms/String_Matching/String_Matching.cpp) |
 | Sliding Window Xor | Sliding Window Problems | [ C++ ](https://github.com/yash011235/CSES/blob/main/Sliding_Window_Problems/Sliding_Window_Xor/Sliding_Window_Xor.cpp) |
