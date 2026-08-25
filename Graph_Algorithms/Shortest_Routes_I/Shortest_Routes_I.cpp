@@ -17,7 +17,6 @@ int main(){
         u--;
         v--;
         adj[u].push_back({v, w});
-        adj[v].push_back({u, w});
     }
     vector<int>dist(n, INT_MAX);
     dist[0] = 0;
