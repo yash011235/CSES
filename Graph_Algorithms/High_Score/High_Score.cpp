@@ -34,7 +34,7 @@ int main() {
     vector<long long> dist(n, LLONG_MIN);
     dist[0] = 0;
  
-    for (int i = 0; i < n - 1; i++) {
+    for (int i = 0; i < m - 1; i++) {
         for (auto &e : edges) {
             if (dist[e.u] != LLONG_MIN &&
                 dist[e.v] < dist[e.u] + e.w) {
@@ -43,15 +43,17 @@ int main() {
             }
         }
     }
- 
+    long long x = dist[n - 1];
     for (auto &e : edges) {
         if (dist[e.u] != LLONG_MIN &&
             dist[e.v] < dist[e.u] + e.w) {
- 
-            cout << -1 << '\n';
-            return 0;
+                dist[e.v] = dist[e.u] + e.w;
         }
     }
- 
-    cout << dist[n - 1] << '\n';
+    if(dist[n - 1] > x){
+        cout << -1 << "\n";
+    }
+    else{
+        cout << dist[n - 1] << '\n';
+    }
 }
