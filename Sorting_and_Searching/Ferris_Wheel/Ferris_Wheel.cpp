@@ -5,7 +5,39 @@
  * Date: 2026-09-01
  */
 
-input/code.cpp: In function 'bool solve(std::vector<long long int>&, long long int, int)':
-input/code.cpp:7:22: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<long long int>::size_type' {aka 'long unsigned int'} [-Wsign-compare]
-    7 |     for(int i = 0; i < a.size(); i++){
-      |                    ~~^~~~~~~~~~
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main() {
+    int n, x;
+    cin >> n >> x;
+ 
+    vector<int> a(n);
+ 
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
+    }
+ 
+    sort(a.begin(), a.end());
+ 
+    int i = 0;
+    int j = n - 1;
+    int ans = 0;
+ 
+    while (i < j) {
+        if (a[i] + a[j] <= x) {
+            i++;
+            j--;
+        } else {
+            j--;
+        }
+ 
+        ans++;
+    }
+    if(i == j){
+        ans++;
+    }
+    cout << ans << '\n';
+ 
+    return 0;
+}
