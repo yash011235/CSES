@@ -7,6 +7,7 @@ My accepted solutions to the [CSES Problem Set](https://cses.fi/problemset/), au
 
 | Problem | Category | Solutions |
 | :--- | :--- | :--- |
+| Apartments | Sorting and Searching | [ C++ ](https://github.com/yash011235/CSES/blob/main/Sorting_and_Searching/Apartments/Apartments.cpp) |
 | Distinct Numbers | Sorting and Searching | [ C++ ](https://github.com/yash011235/CSES/blob/main/Sorting_and_Searching/Distinct_Numbers/Distinct_Numbers.cpp) |
 | Tower of Hanoi | Introductory Problems | [ C++ ](https://github.com/yash011235/CSES/blob/main/Introductory_Problems/Tower_of_Hanoi/Tower_of_Hanoi.cpp) |
 | Apple Division | Introductory Problems | [ C++ ](https://github.com/yash011235/CSES/blob/main/Introductory_Problems/Apple_Division/Apple_Division.cpp) |
