@@ -5,29 +5,7 @@
  * Date: 2026-09-01
  */
 
-#include<bits/stdc++.h>
-using namespace std;
- 
-int main(){
-    int n;
-    cin >> n;
-    vector<long long>a(n);
-    long long total = 0;
-    for(int i = 0; i < n; i++){
-        cin >> a[i];
-        total += a[i];
-    }
-    long long s1 = 0;
-    long long mn = INT_MAX;
-    for(int i = 0; i < n; i++){
-        s1 = 0;
-        for(int j = i; j < n; j++){
-            s1 += a[i];
-            if((2 * s1) > total)
-            mn = min(mn, (2 * s1) - total);
-            else
-            mn = min(mn, total - (2 * s1));
-        }
-    }
-    cout << mn << "\n";
-}
+input/code.cpp: In function 'void solve(int, long long int, long long int, std::vector<long long int>&)':
+input/code.cpp:5:10: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<long long int>::size_type' {aka 'long unsigned int'} [-Wsign-compare]
+    5 |     if(i >= a.size()){
+      |        ~~^~~~~~~~~~~
