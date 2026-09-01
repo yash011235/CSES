@@ -13,19 +13,19 @@ int main() {
     cin >> n;
     long long x;
     cin >> x;
-    vector<long long>a(n);
-    unordered_map<long long, int>mp;
+    vector<pair<int, long long>>a;
     for(int i = 0; i < n; i++){
-        cin >> a[i];
-        mp[a[i]] = i + 1;
+        long long num;
+        cin >> num;
+        a.push_back({num, i + 1});
     }
     int i = 0;
     int j = n - 1;
     sort(a.begin(), a.end());
     while(i < j){
-        long long sum = a[i] + a[j];
+        long long sum = a[i].first + a[j].first;
         if(sum == x){
-            cout << mp[a[i]] << " " << mp[a[j]] << "\n";
+            cout << a[i].second << " " << a[j].second << "\n";
             return 0;
         }
         else if(sum > x){
