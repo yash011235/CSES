@@ -7,6 +7,7 @@ My accepted solutions to the [CSES Problem Set](https://cses.fi/problemset/), au
 
 | Problem | Category | Solutions |
 | :--- | :--- | :--- |
+| High Score | Graph Algorithms | [ C++ ](https://github.com/yash011235/CSES/blob/main/Graph_Algorithms/High_Score/High_Score.cpp) |
 | Shortest Routes II | Graph Algorithms | [ C++ ](https://github.com/yash011235/CSES/blob/main/Graph_Algorithms/Shortest_Routes_II/Shortest_Routes_II.cpp) |
 | Shortest Routes I | Graph Algorithms | [ C++ ](https://github.com/yash011235/CSES/blob/main/Graph_Algorithms/Shortest_Routes_I/Shortest_Routes_I.cpp) |
 | Round Trip | Graph Algorithms | [ C++ ](https://github.com/yash011235/CSES/blob/main/Graph_Algorithms/Round_Trip/Round_Trip.cpp) |
