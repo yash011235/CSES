@@ -7,6 +7,7 @@ My accepted solutions to the [CSES Problem Set](https://cses.fi/problemset/), au
 
 | Problem | Category | Solutions |
 | :--- | :--- | :--- |
+| Minimal Rotation | String Algorithms | [ C++ ](https://github.com/yash011235/CSES/blob/main/String_Algorithms/Minimal_Rotation/Minimal_Rotation.cpp) |
 | Flight Discount | Graph Algorithms | [ C++ ](https://github.com/yash011235/CSES/blob/main/Graph_Algorithms/Flight_Discount/Flight_Discount.cpp) |
 | High Score | Graph Algorithms | [ C++ ](https://github.com/yash011235/CSES/blob/main/Graph_Algorithms/High_Score/High_Score.cpp) |
 | Shortest Routes II | Graph Algorithms | [ C++ ](https://github.com/yash011235/CSES/blob/main/Graph_Algorithms/Shortest_Routes_II/Shortest_Routes_II.cpp) |
