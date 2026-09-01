@@ -5,17 +5,25 @@
  * Date: 2026-09-01
  */
 
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
  
-int main(){
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+ 
     int n;
     cin >> n;
-    vector<long long>a(n);
-    unordered_map<long long, int>mp;
-    for(int i = 0; i < n; i++){
-        cin >> a[i];
-        mp[a[i]]++;
+ 
+    set<long long> s;
+ 
+    for (int i = 0; i < n; i++) {
+        long long x;
+        cin >> x;
+        s.insert(x);
     }
-    cout << mp.size() << "\n";
+ 
+    cout << s.size() << '\n';
+ 
+    return 0;
 }
