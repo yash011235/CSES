@@ -18,7 +18,6 @@ int main() {
     cin >> n >> m;
  
     vector<Edge> edges;
-    vector<vector<int>> rev(n);
  
     for (int i = 0; i < m; i++) {
         int u, v;
@@ -30,33 +29,12 @@ int main() {
         v--;
  
         edges.push_back({u, v, w});
-        rev[v].push_back(u);
     }
  
-    // Find vertices from which n is reachable
-    vector<bool> canReachN(n, false);
-    queue<int> q;
- 
-    canReachN[n - 1] = true;
-    q.push(n - 1);
- 
-    while (!q.empty()) {
-        int u = q.front();
-        q.pop();
- 
-        for (int v : rev[u]) {
-            if (!canReachN[v]) {
-                canReachN[v] = true;
-                q.push(v);
-            }
-        }
-    }
- 
-    // Bellman-Ford for maximum distance
     vector<long long> dist(n, LLONG_MIN);
     dist[0] = 0;
  
-    for (int i = 0; i < n - 1; i++) {
+    for (int i = 0; i < m - 1; i++) {
         for (auto &e : edges) {
             if (dist[e.u] != LLONG_MIN &&
                 dist[e.v] < dist[e.u] + e.w) {
@@ -65,19 +43,17 @@ int main() {
             }
         }
     }
- 
-    // Check for a positive cycle affecting the answer
+    long long x = dist[n - 1];
     for (auto &e : edges) {
         if (dist[e.u] != LLONG_MIN &&
-            dist[e.v] < dist[e.u] + e.w &&
-            canReachN[e.v]) {
- 
-            cout << -1 << '\n';
-            return 0;
+            dist[e.v] < dist[e.u] + e.w) {
+                dist[e.v] = dist[e.u] + e.w;
         }
     }
- 
-    cout << dist[n - 1] << '\n';
- 
-    return 0;
+    if(dist[n - 1] > x){
+        cout << -1 << "\n";
+    }
+    else{
+        cout << dist[n - 1] << '\n';
+    }
 }
