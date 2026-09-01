@@ -7,6 +7,7 @@ My accepted solutions to the [CSES Problem Set](https://cses.fi/problemset/), au
 
 | Problem | Category | Solutions |
 | :--- | :--- | :--- |
+| Apple Division | Introductory Problems | [ C++ ](https://github.com/yash011235/CSES/blob/main/Introductory_Problems/Apple_Division/Apple_Division.cpp) |
 | Book Shop | Dynamic Programming | [ C++ ](https://github.com/yash011235/CSES/blob/main/Dynamic_Programming/Book_Shop/Book_Shop.cpp) |
 | Longest Palindrome | String Algorithms | [ C++ ](https://github.com/yash011235/CSES/blob/main/String_Algorithms/Longest_Palindrome/Longest_Palindrome.cpp) |
 | Minimal Rotation | String Algorithms | [ C++ ](https://github.com/yash011235/CSES/blob/main/String_Algorithms/Minimal_Rotation/Minimal_Rotation.cpp) |
