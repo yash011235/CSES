@@ -5,32 +5,7 @@
  * Date: 2026-09-02
  */
 
-#include<bits/stdc++.h>
-using namespace std;
-set<int>sums;
-void solve(vector<int>&a, int idx, int n, int curr){
-    if(idx == n){
-        sums.insert(curr);
-        return;
-    }
-    sums.insert(curr);
-    solve(a, idx + 1, n, curr + a[idx]);
-    solve(a, idx + 1, n, curr);
-    return;
-}
-int main(){
-    int n;
-    cin >> n;
-    vector<int>a(n);
-    for(int i = 0; i < n; i++){
-        cin >> a[i];
-    }
-    solve(a, 0, n, 0);
-    cout << sums.size() - 1 << "\n";
-    auto itr = sums.begin();
-    itr++;
-    while(itr != sums.end()){
-        cout << *itr << " ";
-        itr++;
-    }
-}
+input/code.cpp: In function 'int main()':
+input/code.cpp:16:22: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<int>::size_type' {aka 'long unsigned int'} [-Wsign-compare]
+   16 |     for(int i = 0; i < a.size(); i++){
+      |                    ~~^~~~~~~~~~
