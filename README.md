@@ -7,6 +7,7 @@ My accepted solutions to the [CSES Problem Set](https://cses.fi/problemset/), au
 
 | Problem | Category | Solutions |
 | :--- | :--- | :--- |
+| Removing Digits | Dynamic Programming | [ C++ ](https://github.com/yash011235/CSES/blob/main/Dynamic_Programming/Removing_Digits/Removing_Digits.cpp) |
 | Sum of Two Values | Sorting and Searching | [ C++ ](https://github.com/yash011235/CSES/blob/main/Sorting_and_Searching/Sum_of_Two_Values/Sum_of_Two_Values.cpp) |
 | Restaurant Customers | Sorting and Searching | [ C++ ](https://github.com/yash011235/CSES/blob/main/Sorting_and_Searching/Restaurant_Customers/Restaurant_Customers.cpp) |
 | Concert Tickets | Sorting and Searching | [ C++ ](https://github.com/yash011235/CSES/blob/main/Sorting_and_Searching/Concert_Tickets/Concert_Tickets.cpp) |
