@@ -11,36 +11,24 @@
 using namespace std;
  
 int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
- 
     long long n, k;
-    if (!(cin >> n >> k)) return 0;
- 
-    // Maximum inversions possible with n elements is n * (n - 1) / 2
-    long long max_k = n * (n - 1) / 2;
-    if (k < 0 || k > max_k) {
-        cout << -1 << "\n";
-        return 0;
-    }
- 
-    vector<long long> result(n);
-    long long left = 1, right = n;
- 
-    for (long long i = 0; i < n; i++) {
-        long long remaining_elements = n - 1 - i;
-        if (k >= remaining_elements) {
-            result[i] = right;
+    cin >> n >> k;
+    vector<int>a(n);
+    int left = 1;
+    int right = n;
+    for(int i = 0; i < n; i++){
+        if(k >= (n - i - 1)){
+            k -= (n - i - 1);
+            a[i] = right;
             right--;
-            k -= remaining_elements;
-        } else {
-            result[i] = left;
+        }
+        else{
+            a[i] = left;
             left++;
         }
     }
- 
-    for (long long i = 0; i < n; i++) {
-        cout << result[i] << (i == n - 1 ? "" : " ");
+    for(int i = 0; i < n; i++){
+        cout << a[i] << " ";
     }
     cout << "\n";
  
