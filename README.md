@@ -7,6 +7,7 @@ My accepted solutions to the [CSES Problem Set](https://cses.fi/problemset/), au
 
 | Problem | Category | Solutions |
 | :--- | :--- | :--- |
+| Coin Combinations I | Dynamic Programming | [ C++ ](https://github.com/yash011235/CSES/blob/main/Dynamic_Programming/Coin_Combinations_I/Coin_Combinations_I.cpp) |
 | Grid Paths I | Dynamic Programming | [ C++ ](https://github.com/yash011235/CSES/blob/main/Dynamic_Programming/Grid_Paths_I/Grid_Paths_I.cpp) |
 | Inverse Inversions | Construction Problems | [ C++ ](https://github.com/yash011235/CSES/blob/main/Construction_Problems/Inverse_Inversions/Inverse_Inversions.cpp) |
 | Elevator Rides | Dynamic Programming | [ C++ ](https://github.com/yash011235/CSES/blob/main/Dynamic_Programming/Elevator_Rides/Elevator_Rides.cpp) |
