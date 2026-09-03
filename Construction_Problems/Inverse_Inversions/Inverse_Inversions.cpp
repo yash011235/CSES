@@ -50,6 +50,14 @@ int main() {
         return 0;
     }
  
+    if(k == 0){
+        for(long long i = 1; i <= n; i++) {
+            cout << i << " ";
+        }
+        cout << "\n";
+        return 0;
+    }
+ 
     long long x = k;
  
     long long div = (x + n - 2) / (n - 1);
