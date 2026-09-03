@@ -9,8 +9,9 @@
 using namespace std;
  
 void rotate(vector<long long>& a, long long num) {
-    long long curr = num + 1;
     long long n = a.size();
+ 
+    long long curr = num + 1;
  
     for(long long i = 0; i < n - num; i++) {
         a[i] = curr;
@@ -42,6 +43,7 @@ int main() {
         a[i] = i + 1;
     }
  
+    // Maximum possible inversions
     if(k == (n * (n - 1)) / 2) {
         for(long long i = n; i >= 1; i--) {
             cout << i << " ";
@@ -50,7 +52,8 @@ int main() {
         return 0;
     }
  
-    if(k == 0){
+    // No inversions
+    if(k == 0) {
         for(long long i = 1; i <= n; i++) {
             cout << i << " ";
         }
@@ -58,17 +61,22 @@ int main() {
         return 0;
     }
  
-    long long x = k;
+    long long div = (k + n - 2) / (n - 1);
  
-    long long div = (x + n - 2) / (n - 1);
- 
-    long long rem = x % (n - 1);
+    long long rem = k % (n - 1);
  
     if(rem == 0) {
         rem = n - 1;
     }
-    if(div > 1)
-    rotate(a, div - 1);
+ 
+    // Equivalent to:
+    // rotate(a, 1);
+    // rotate(a, 2);
+    // ...
+    // rotate(a, div - 1);
+    if(div > 1) {
+        rotate(a, div - 1);
+    }
  
     rotate2(a, rem, div);
  
