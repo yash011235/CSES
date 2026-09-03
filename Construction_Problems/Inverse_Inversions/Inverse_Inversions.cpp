@@ -5,85 +5,43 @@
  * Date: 2026-09-03
  */
 
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+ 
 using namespace std;
  
-void rotate(vector<long long>& a, long long num) {
-    long long n = a.size();
- 
-    long long curr = num + 1;
- 
-    for(long long i = 0; i < n - num; i++) {
-        a[i] = curr;
-        curr++;
-    }
- 
-    a[n - num] = num;
- 
-    for(long long i = n - num + 1; i < n; i++) {
-        a[i] = a[i - 1] - 1;
-    }
-}
- 
-void rotate2(vector<long long>& a, long long rem, long long num) {
-    for(long long i = 0; i < rem; i++) {
-        a[i] = a[i + 1];
-    }
- 
-    a[rem] = num;
-}
- 
 int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+ 
     long long n, k;
-    cin >> n >> k;
+    if (!(cin >> n >> k)) return 0;
  
-    vector<long long> a(n);
- 
-    for(long long i = 0; i < n; i++) {
-        a[i] = i + 1;
-    }
- 
-    // Maximum possible inversions
-    if(k == (n * (n - 1)) / 2) {
-        for(long long i = n; i >= 1; i--) {
-            cout << i << " ";
-        }
-        cout << "\n";
+    // Maximum inversions possible with n elements is n * (n - 1) / 2
+    long long max_k = n * (n - 1) / 2;
+    if (k < 0 || k > max_k) {
+        cout << -1 << "\n";
         return 0;
     }
  
-    // No inversions
-    if(k == 0) {
-        for(long long i = 1; i <= n; i++) {
-            cout << i << " ";
+    vector<long long> result(n);
+    long long left = 1, right = n;
+ 
+    for (long long i = 0; i < n; i++) {
+        long long remaining_elements = n - 1 - i;
+        if (k >= remaining_elements) {
+            result[i] = right;
+            right--;
+            k -= remaining_elements;
+        } else {
+            result[i] = left;
+            left++;
         }
-        cout << "\n";
-        return 0;
     }
  
-    long long div = (k + n - 2) / (n - 1);
- 
-    long long rem = k % (n - 1);
- 
-    if(rem == 0) {
-        rem = n - 1;
+    for (long long i = 0; i < n; i++) {
+        cout << result[i] << (i == n - 1 ? "" : " ");
     }
- 
-    // Equivalent to:
-    // rotate(a, 1);
-    // rotate(a, 2);
-    // ...
-    // rotate(a, div - 1);
-    if(div > 1) {
-        rotate(a, div - 1);
-    }
- 
-    rotate2(a, rem, div);
- 
-    for(long long &e : a) {
-        cout << e << " ";
-    }
- 
     cout << "\n";
  
     return 0;
