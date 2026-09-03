@@ -8,16 +8,18 @@
 #include<bits/stdc++.h>
 using namespace std;
 int n;
-int ans = 0;
-void solve(int i, int j, vector<vector<char>>&grid){
+vector<vector<int>>dp;
+int solve(int i, int j, vector<vector<char>>&grid){
     if(i >= n || j >= n || grid[i][j] == '*'){
-        return;
+        return 0;
     }
     if(i == (n - 1) && j == (n - 1)){
-        ans++;
+        return 1;
     }
-    solve(i + 1, j, grid);
-    solve(i, j + 1, grid);
+    if(dp[i][j] != -1){
+        return dp[i][j];
+    }
+    return dp[i][j] = solve(i + 1, j, grid) + solve(i, j + 1, grid);
 }
  
 int main(){
@@ -28,6 +30,7 @@ int main(){
             cin >> grid[i][j];
         }
     }
-    solve(0, 0, grid);
+    dp.assign(n, vector<int>(n, -1));
+    int ans = solve(0, 0, grid);
     cout << ans << "\n";
 }
