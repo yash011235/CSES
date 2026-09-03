@@ -67,10 +67,8 @@ int main() {
     if(rem == 0) {
         rem = n - 1;
     }
- 
-    for(long long num = 1; num < div; num++) {
-        rotate(a, num);
-    }
+    if(div > 1)
+    rotate(a, div - 1);
  
     rotate2(a, rem, div);
  
