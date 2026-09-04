@@ -7,6 +7,7 @@ My accepted solutions to the [CSES Problem Set](https://cses.fi/problemset/), au
 
 | Problem | Category | Solutions |
 | :--- | :--- | :--- |
+| Digit Queries | Introductory Problems | [ C++ ](https://github.com/yash011235/CSES/blob/main/Introductory_Problems/Digit_Queries/Digit_Queries.cpp) |
 | Counting Bits | Bitwise Operations | [ C++ ](https://github.com/yash011235/CSES/blob/main/Bitwise_Operations/Counting_Bits/Counting_Bits.cpp) |
 | Coin Combinations I | Dynamic Programming | [ C++ ](https://github.com/yash011235/CSES/blob/main/Dynamic_Programming/Coin_Combinations_I/Coin_Combinations_I.cpp) |
 | Grid Paths I | Dynamic Programming | [ C++ ](https://github.com/yash011235/CSES/blob/main/Dynamic_Programming/Grid_Paths_I/Grid_Paths_I.cpp) |
