@@ -12,7 +12,7 @@ int main(){
     int q;
     cin >> q;
     while(q--){
-        int k;
+        long long k;
         cin >> k;
         
         long long len = 1;
